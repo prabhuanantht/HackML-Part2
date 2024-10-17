@@ -1,13 +1,5 @@
-PyMuPDF
-python-docx
-spacy
+streamlit
 pandas
 numpy
-scikit-learn
-fuzzywuzzy
-streamlit
-nltk
-gensim
-tensorflow
-sentence-transformers
-boto3
+sentence_transformers
+sklearn
