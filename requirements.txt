@@ -4,4 +4,4 @@ numpy
 requests
 sentence-transformers
 scikit-learn
-torch
+torch>=2.0.0
