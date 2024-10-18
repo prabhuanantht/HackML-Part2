@@ -260,7 +260,7 @@ def load_model():
 # Load the resume dataset
 @st.cache_data
 def load_data():
-    df_resumes = pd.read_csv('cleaned_resumes.csv')  # Replace with your file path
+    df_resumes = pd.read_csv('https://resumedataset.s3.eu-north-1.amazonaws.com/cleaned_resumes.csv')  # Replace with your file path
     df_resumes['Cleaned_Text'] = df_resumes['Cleaned_Text'].fillna('')  # Fill NaN with empty strings
     return df_resumes
 
