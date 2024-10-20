@@ -262,15 +262,16 @@ def load_model():
 @st.cache_data
 def load_data():
     # Define the URL for the CSV file
-    csv_url = 'https://resumedataset.s3.eu-north-1.amazonaws.com/cleaned_resumes.csv'
+    # csv_url = 'https://resumedataset.s3.eu-north-1.amazonaws.com/cleaned_resumes.csv'
+    csv = 'cleaned_resumes.csv'
 
     # Send a GET request to download the CSV file
     response = requests.get(csv_url)
     
     # Check if the request was successful
-    if response.status_code != 200:
-        st.error(f"Failed to download the dataset. Status code: {response.status_code}")
-        return pd.DataFrame()  # Return an empty DataFrame if the request fails
+    # if response.status_code != 200:
+    #     st.error(f"Failed to download the dataset. Status code: {response.status_code}")
+    #     return pd.DataFrame()  # Return an empty DataFrame if the request fails
 
     # Use io.StringIO to read the content directly from the downloaded file
     df_resumes = pd.read_csv(io.StringIO(response.text))
