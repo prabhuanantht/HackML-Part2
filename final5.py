@@ -266,7 +266,7 @@ def load_data():
     csv = 'cleaned_resumes.csv'
 
     # Send a GET request to download the CSV file
-    response = requests.get(csv_url)
+    # response = requests.get(csv_url)
     
     # Check if the request was successful
     # if response.status_code != 200:
